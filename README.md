@@ -5,7 +5,7 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|index: true, null:false, unique:true|
+|name|string|index: true, null:false|
 |mail|string|null: false|
 
 ### Association
