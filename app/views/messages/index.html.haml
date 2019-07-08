@@ -70,12 +70,11 @@
     .footer
       %form.footer__form
         .footer__form__input_box
-          %input.footer__form__input_box__text{:placeholder => "type a message", :type => "text"}
-          -# .form__attachment
+          %input.footer__form__input_box__text{placeholder: "type a message", type: "text"}
           %label.footer__form__input_box__attachment
             =fa_icon 'image', class: 'fa-lg'
-            %input.footer__form__input_box__attachment__file{:type => "file"}
-        %input.footer__form__btn{:value => "Send", :type => "submit"}
+            %input.footer__form__input_box__attachment__file{type: "file"}
+        %input.footer__form__btn{value: "Send", type: "submit"}
 
  
         

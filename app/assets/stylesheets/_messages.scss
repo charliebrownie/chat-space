@@ -6,7 +6,6 @@
 
 .contents {
   height: 100vh;
-  // background-color: rgb(124, 124, 180);
   width: 100vw;
   display: flex;
 
@@ -34,7 +33,6 @@
             padding-left: 5px;
 
             &__icon{
-              // float: right;
               color: white;
             }      
           }
@@ -66,7 +64,6 @@
     }
   }
 
-
   .right_contents{
     height: 100%;
     width: calc(100vw - 300px);
@@ -83,12 +80,8 @@
       box-sizing: border-box;
       border-bottom: 1px #eeeeee solid;
       
-
       .right_header__box{
-        // height: 100%;
-        // width: 50%;
         padding-top: 35px;
-        // box-sizing: border-box;
         &__name{
           font-size: 20px;
           color: #333333;
@@ -104,18 +97,14 @@
         height: 40px;
         line-height: 40px;
         border: solid 1px;
-        // width: 60px;
         background-color: white;
         border: 1px #38AEF0 solid;
         color: #38AEF0;
         padding: 0 20px;
         margin-top: 28px;
       }
-      
-
     }
   
-
     .right_chat{
       background-color: #fafafa;
       height: calc(100% - 100px - 90px);
@@ -126,7 +115,6 @@
       box-sizing: border-box;
       overflow: auto;
       
-
       .message-title{
         display:flex;
         
@@ -163,7 +151,6 @@
       box-sizing: border-box;
       &__form {
         display: flex;
-      
 
         &__input_box{
           position: relative;
@@ -174,7 +161,6 @@
             font-size: 16px;
             color: #434A54;
             width: calc(100% - 50px);
-            // padding-left: 10px;
             padding: 0 40px 0 10px;
 
           }
