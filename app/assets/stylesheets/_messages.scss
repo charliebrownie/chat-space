@@ -1,0 +1,203 @@
+.header{
+  background-color:#38AEF0;
+  text-align: center;
+  color: white;
+}
+
+.contents {
+  height: 100vh;
+  // background-color: rgb(124, 124, 180);
+  width: 100vw;
+  display: flex;
+
+  .left_contents{
+    background-color: #2f3e51;
+    height: 100px;
+    width:300px;
+
+    .left_header{
+      height: 100px;
+      width: 100%;
+      background-color: #253141;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 45px 20px 45px 20px;
+
+      &__box{
+        color: white;
+        justify-content: space-between;
+        display: flex;
+        
+        &__lists{
+          display: flex;
+          &__list {
+            padding-left: 5px;
+
+            &__icon{
+              // float: right;
+              color: white;
+            }      
+          }
+        }
+      }
+    }
+
+    .groups{
+      height: 770px;
+      width: 100%;
+      background-color: #2f3e51;
+      color: white;
+
+      &__box{
+        padding: 20px 20px 40px 20px;
+        &__name{
+          font-size: 15px;
+          font-style: bold;
+          color: #FFFFFF;
+          margin-bottom: 5px;
+        }
+
+        &__latest-message{
+          font-size: 11px;
+          font-style: bold;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+
+  .right_contents{
+    height: 100%;
+    width: calc(100vw - 300px);
+    background-color: #fafafa;
+    position: relative;
+
+    .right_header{
+      background-color:white;
+      height: 100px;
+      width: 100%;
+      padding: 0px 40px;
+      display: flex;
+      justify-content: space-between; 
+      box-sizing: border-box;
+      border-bottom: 1px #eeeeee solid;
+      
+
+      .right_header__box{
+        // height: 100%;
+        // width: 50%;
+        padding-top: 35px;
+        // box-sizing: border-box;
+        &__name{
+          font-size: 20px;
+          color: #333333;
+          padding-bottom: 15px;
+        }
+        &__members{
+          font-size: 12px;
+          color: #999999;
+          
+        }
+      }
+      .right_header__edit-box{
+        height: 40px;
+        line-height: 40px;
+        border: solid 1px;
+        // width: 60px;
+        background-color: white;
+        border: 1px #38AEF0 solid;
+        color: #38AEF0;
+        padding: 0 20px;
+        margin-top: 28px;
+      }
+      
+
+    }
+  
+
+    .right_chat{
+      background-color: #fafafa;
+      height: calc(100% - 100px - 90px);
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 46px;
+      box-sizing: border-box;
+      overflow: auto;
+      
+
+      .message-title{
+        display:flex;
+        
+      }
+
+      .message{
+        font-size: 16px;
+        font-weight: bold;
+        color: #434A54;
+        margin-bottom: 10px;
+      }
+
+       .message_date{
+        font-size: 12px;
+        color: #999999;
+        margin-left: 10px;
+      }
+
+      .message_text{
+        font-size: 14px;
+        color: #434A54;
+        margin-bottom: 40px;
+        box-sizing: border-box;
+      }
+    }
+
+    .footer{
+      height: 120px;
+      width: 100%;
+      background-color: #ddd;
+      position: absolute;
+      bottom: 0px;
+      padding: 20px 40px;
+      box-sizing: border-box;
+      &__form {
+        display: flex;
+      
+
+        &__input_box{
+          position: relative;
+          width: 100%;
+          
+          &__text{
+            height: 50px;
+            font-size: 16px;
+            color: #434A54;
+            width: calc(100% - 50px);
+            // padding-left: 10px;
+            padding: 0 40px 0 10px;
+
+          }
+          &__attachment{
+            position: absolute;
+            top: 15px;
+            right: 10px;
+
+            &__file{
+              display:none;
+            }
+          }
+        }
+        &__btn{
+          background-color: #38AEF0;
+          color: white;
+          height: 50px;
+          width: 15%;
+          border: 1px #38AEF0 solid;
+          margin-left: 15px;
+        }
+      }
+      
+    }
+  }
+}
