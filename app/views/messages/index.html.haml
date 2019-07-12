@@ -5,44 +5,52 @@
     .right_header
       .right_header__box
         %p.right_header__box__name
-          sample
+          = @group.name
         %p.right_header__box__members
-          Members: seo neko
+          Members: 
+          - @group.users.each do |user|
+            = user.name
+
       .right_header__edit-box
         Edit
-      
+
     .right_chat
       .left-box
-        .message-title
-          .message
-            mai
-          %p.message_date
-            2019/07/08(Mon) 13:27:47
-        %p.message_text
-          aaa
-        .message-title
-          .message
-            mai
-          %p.message_date
-            2019/07/08(Mon) 13:27:47
-        %p.message_text
-          aaa
-        .message-title
-          .message
-            mai
-          %p.message_date
-            2019/07/08(Mon) 13:27:47
-        %p.message_text
-          aaa
+        = render @messages
+      
+      
+    -# .right_chat
+    -#   .left-box
+    -#     .message-title
+    -#       .message
+    -#         mai
+    -#       %p.message_date
+    -#         2019/07/08(Mon) 13:27:47
+    -#     %p.message_text
+    -#       aaa
+    -#     .message-title
+    -#       .message
+    -#         mai
+    -#       %p.message_date
+    -#         2019/07/08(Mon) 13:27:47
+    -#     %p.message_text
+    -#       aaa
+    -#     .message-title
+    -#       .message
+    -#         mai
+    -#       %p.message_date
+    -#         2019/07/08(Mon) 13:27:47
+    -#     %p.message_text
+    -#       aaa
 
     .footer
-      %form.footer__form
+      = form_for [@group, @message], html: {class: 'footer__form'} do |f|
         .footer__form__input_box
-          %input.footer__form__input_box__text{placeholder: "type a message", type: "text"}
-          %label.footer__form__input_box__attachment
-            =fa_icon 'image', class: 'fa-lg'
-            %input.footer__form__input_box__attachment__file{type: "file"}
-        %input.footer__form__btn{value: "Send", type: "submit"}
+          = f.text_field :content, class: 'footer__form__input_box__text', placeholder: 'type a message'
+          = f.label :image, class: 'footer__form__input_box__attachment' do
+            = fa_icon 'image', class: 'fa-lg'
+            = f.file_field :image, class: 'footer__form__input_box__attachment__file'
+        = f.submit 'Send', class: 'footer__form__btn'
 
  
         
