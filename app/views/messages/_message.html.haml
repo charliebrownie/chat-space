@@ -2,7 +2,7 @@
   .message
     = message.user.name
   %p.message_date
-    = message.created_at.strftime("%Y/%m/%d %H:%M")
+    = message.created_at.strftime("%Y/%m/%d(%a) %T")
 
 - if message.content.present?
   %p.message_text
