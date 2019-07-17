@@ -66,7 +66,6 @@ $(function(){
   });
 
   $(".chat-group-form__field--right").on('click', ".js-remove-btn", function(){
-    console.log("hello");
     $(this).parent().remove();
   })
 });
