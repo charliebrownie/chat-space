@@ -6,7 +6,7 @@
       %ul.left_header__box__lists
         %li.left_header__box__lists__list
           =link_to new_group_path do
-            =fa_icon 'edit', class: "left_header__box__lists__list__icon"
+            =fa_icon 'edit', class: "left_header__box__lists__list__icon", data: {"turbolinks" => false} 
         %li.left_header__box__lists__list
           =link_to edit_user_path(current_user) do
             =fa_icon 'cog', class: "left_header__box__lists__list__icon"
