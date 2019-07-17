@@ -12,7 +12,8 @@
             = user.name
 
       .right_header__edit-box
-        Edit
+        = link_to edit_group_path(@group), class: "right_header__edit-box__link", data: {"turbolinks" => false } do 
+          Edit
 
     .right_chat
       .left-box
