@@ -15,7 +15,7 @@
   .groups
     - current_user.groups.each do |group|
       .groups__box
-        =link_to group_messages_path(group) do
+        =link_to group_messages_path(group), data: {"turbolinks" => false } do
           %p.groups__box__name 
             =group.name
           %p.groups__box__latest-message
