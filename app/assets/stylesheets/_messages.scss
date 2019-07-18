@@ -1,4 +1,9 @@
-.header{
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+header{
   background-color:#38AEF0;
   text-align: center;
   color: white;
@@ -11,7 +16,7 @@
 
   .left_contents{
     background-color: #2f3e51;
-    height: 100px;
+    height: 100%;
     width:300px;
 
     .left_header{
@@ -41,10 +46,11 @@
     }
 
     .groups{
-      height: 770px;
+      height: calc(100% - 100px);
       width: 100%;
       background-color: #2f3e51;
       color: white;
+      overflow: scroll;
 
       &__box{
         padding: 20px 20px 40px 20px;
@@ -112,20 +118,20 @@
   
     .right_chat{
       background-color: #fafafa;
-      height: calc(100% - 100px - 90px);
+      height: calc(100% - 100px - 100px);
       width: 100%;
       padding-left: 40px;
       padding-right: 40px;
       padding-top: 46px;
       box-sizing: border-box;
-      overflow: auto;
+      overflow: scroll;
       
       .message-title{
         display:flex;
         
       }
 
-      .message{
+      .message_username{
         font-size: 16px;
         font-weight: bold;
         color: #434A54;
@@ -147,7 +153,7 @@
     }
 
     .footer{
-      height: 120px;
+      height: 100px;
       width: 100%;
       background-color: #ddd;
       position: absolute;

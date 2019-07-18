@@ -18,31 +18,6 @@
     .right_chat
       .left-box
         = render @messages
-      
-      
-    -# .right_chat
-    -#   .left-box
-    -#     .message-title
-    -#       .message
-    -#         mai
-    -#       %p.message_date
-    -#         2019/07/08(Mon) 13:27:47
-    -#     %p.message_text
-    -#       aaa
-    -#     .message-title
-    -#       .message
-    -#         mai
-    -#       %p.message_date
-    -#         2019/07/08(Mon) 13:27:47
-    -#     %p.message_text
-    -#       aaa
-    -#     .message-title
-    -#       .message
-    -#         mai
-    -#       %p.message_date
-    -#         2019/07/08(Mon) 13:27:47
-    -#     %p.message_text
-    -#       aaa
 
     .footer
       = form_for [@group, @message], html: {class: 'footer__form'} do |f|
