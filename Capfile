@@ -26,12 +26,12 @@ install_plugin Capistrano::SCM::Git
 #
 # For documentation on these, see for example:
 #
-#   https://github.com/capistrano/rvm
-#   https://github.com/capistrano/rbenv
-#   https://github.com/capistrano/chruby
-#   https://github.com/capistrano/bundler
-#   https://github.com/capistrano/rails
-#   https://github.com/capistrano/passenger
+#   https://.com/capistrano/rvm
+#   https://.com/capistrano/rbenv
+#   https://.com/capistrano/chruby
+#   https://.com/capistrano/bundler
+#   https://.com/capistrano/rails
+#   https://.com/capistrano/passenger
 #
 # require "capistrano/rvm"
 # require "capistrano/rbenv"
