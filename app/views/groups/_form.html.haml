@@ -27,7 +27,9 @@
           .chat-group-user.clearfix{id: "#{member.id}"}
             %input{name: "group[user_ids][]", type: "hidden", value: "#{member.id}" }/
             %p.chat-group-user__name 
-            =member.name
+              =member.name
+            - unless member.id == current_user.id
+              %a.user-search-remove.chat-group-user__btn.chat-group-user__btn--remove.js-remove-btn 削除
         
   .chat-group-form__field.clearfix
     .chat-group-form__field--left
